@@ -88,10 +88,10 @@ npm run dev
 - **POST** `/api/auth/logout` - Logout from the system
 - **POST** `/api/auth/send-verify-otp` - Request email verify OTP
 - **POST** `/api/auth/verify-account` - Verify email via OTP
-- **POST** `/api/auth/is-auth` - check wether the user is authenticated
+- **GET** `/api/auth/is-auth` - check wether the user is authenticated
 - **POST** `/api/auth/send-reset-otp` - Request password reset OTP
 - **POST** `/api/auth/reset-password` - Reset password using OTP
-- **POST** `/api/user/data` - get user data
+- **GET** `/api/user/data` - get user data
 
 ## Folder Structure
 
@@ -108,9 +108,12 @@ mern-auth-system/
 │── frontend/
 │   ├── src/
 │   ├── components/
+|   ├── assets/
+|   ├── context/
 │   ├── pages/
-│   ├── App.js
-│   ├── index.js
+│   ├── App.jsx
+│   ├── main.jsx
+|   ├── index.css
 ```
 
 ## Contributing
